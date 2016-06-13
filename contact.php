@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Contact | Taxi Wessel</title>
-    
+
     <!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
@@ -14,11 +14,11 @@
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-    
+
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->       
+    <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -31,7 +31,7 @@
     <?php include 'includes/header.php'; ?>
 
     <section id="contact-info">
-        <div class="center">                
+        <div class="center">
             <h2>Contacteer ons</h2>
         </div>
         <div class="gmap-area">
@@ -63,30 +63,19 @@
 
     <section id="contact-page">
         <div class="container">
-            <div class="center">        
+            <div class="center">
                 <h2>Stuur ons een bericht</h2>
-            </div> 
-            <div class="row contact-wrap"> 
-                <form action="mailer.php" method="post" id="main-contact-form" class="contact-form">
-                            <label>Naam *</label>
-                            <input type="text" name="name" class="form-control" required="required">
-                            <label>Email *</label>
-                            <input type="text" name="sender" class="form-control" required="required">
-                            <label>Onderwerp *</label>
-                            <input type="text" name="subject" class="form-control" required="required">
-                        <label>Bericht *</label>
-                        <textarea type="text" name="message" required="required" class="form-control" rows="8"></textarea>            
-                        <button type="submit" class="btn btn-primary btn-lg">Verstuur bericht</button>
-                </form>
+            </div>
+            <div class="row contact-wrap">
                 <form action="mailer.php" method="post" class="contact-form">
                     <label>Naam *</label>
-                    <input type="text" name="name" value="subject" class="form-control">
+                    <input type="text" name="name" class="form-control" required="required">
                     <label>Email *</label>
-                    <input type="text" name="sender" value="your name" class="form-control">
+                    <input type="text" name="sender" class="form-control" required="required">
                     <label>Onderwerp</label>
-                    <input type="text" name="subject" value="your email" class="form-control">
+                    <input type="text" name="subject" class="form-control" required="required">
                     <label>Bericht *</label>
-                    <input type="text" name="message" value="message" size="100" class="form-control">
+                    <input type="text" name="message" rows="8" class="form-control" required="required">
                     <input type="submit" value="Send" class="btn btn-primary btn-lg">
                 </form>
             </div><!--/.row-->

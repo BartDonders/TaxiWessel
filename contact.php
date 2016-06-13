@@ -67,7 +67,7 @@
                 <h2>Stuur ons een bericht</h2>
             </div>
             <div class="row contact-wrap">
-                <form action="mailer.php" method="post" class="contact-form">
+                <form action="mailer.php" method="post" class="contact-form" id="main-contact-form">
                     <label>Naam *</label>
                     <input type="text" name="name" class="form-control" required="required">
                     <label>Email *</label>
@@ -75,7 +75,7 @@
                     <label>Onderwerp</label>
                     <input type="text" name="subject" class="form-control" required="required">
                     <label>Bericht *</label>
-                    <input type="text" name="message" rows="8" class="form-control" required="required">
+                    <input type="text" name="message" size="300" class="form-control" required="required">
                     <input type="submit" value="Send" class="btn btn-primary btn-lg">
                 </form>
             </div><!--/.row-->

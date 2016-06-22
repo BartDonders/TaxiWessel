@@ -7,6 +7,7 @@
     <meta name="author" content="">
     <title>Airport Taxi | Taxi Wessel</title>
     
+    <?php $current = 'airport'; ?>
     
     <?php include 'includes/styles.php'; ?>
     

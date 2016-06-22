@@ -31,19 +31,12 @@
 				
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <?php
-                        $full_name = $_SERVER['PHP_SELF'];
-                        $name_array = explode('/',$full_name);
-                        $count = count($name_array);
-                        $page_name = $name_array[$count-1];
-                        ?>
-                        <li><a class="<?php echo ($page_name=='index.php')?'active':'';?>" href="index.php">Home</a></li>
-                        <li><a class="<?php echo ($page_name=='airport.php')?'active':'';?>" href="airport.php">Airport taxi</a></li>
-    
-                        <li><a href="airport.php">Airport taxi</a></li>
-                        <li><a href="services.html">Limousine</a></li>
-                        <li><a href="portfolio.html">Groepsvervoer</a></li>
-                        <li><a href="contact.php">Contact</a></li>                        
+                        
+                        <li <?php if($current == 'index') {echo 'class="active"';} ?>><a href="index.php">Home</a></li>
+                        <li <?php if($current == 'airport') {echo 'class="active"';} ?>><a href="airport.php">Airport taxi</a></li>
+                        <li <?php if($current == 'limousine') {echo 'class="active"';} ?>><a href="limousine.php">Limousine</a></li>
+                        <li <?php if($current == 'groepsvervoer') {echo 'class=active';} ?>><a href="groepsvervoer.php">Groepsvervoer</a></li>
+                        <li <?php if($current == 'contact') {echo 'class="active"';} ?>><a href="contact.php">Contact</a></li>                        
                     </ul>
                 </div>
             </div><!--/.container-->

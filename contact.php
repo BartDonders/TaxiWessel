@@ -7,27 +7,14 @@
     <meta name="author" content="">
     <title>Contact | Taxi Wessel</title>
 
-    <!-- core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
-
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <?php $current = 'contact'; ?>
+    
+    <?php include 'includes/styles.php'; ?>
+    
 </head><!--/head-->
 
 <body>
-
+    
     <?php include 'includes/header.php'; ?>
 
     <section id="contact-info">
@@ -66,17 +53,21 @@
             <div class="center">
                 <h2>Stuur ons een bericht</h2>
             </div>
-            <div class="row contact-wrap">
-                <form action="mailer.php" method="post" class="contact-form">
+            <div class="row contact-wrap col">
+                <div class="col-sm-6">
+                    <form action="mailer.php" method="post" class="contact-form">
                     <label>Naam *</label>
                     <input type="text" name="name" class="form-control" required="required">
                     <label>Email *</label>
                     <input type="text" name="sender" class="form-control" required="required">
-                    <label>Onderwerp</label>
+                    <label>Onderwerp *</label>
                     <input type="text" name="subject" class="form-control" required="required">
+            </div>
+            <div class="col-sm-6">
                     <label>Bericht *</label>
-                    <input type="text" name="message" size="300" class="form-control" required="required">
-                    <input type="submit" value="Send" class="btn btn-primary btn-lg">
+                <textarea type="text" name="message" rows="8" class="form-control" required="required"></textarea>
+                    <input type="submit" value="Versturen" class="btn btn-primary btn-lg">
+                </div>
                 </form>
             </div><!--/.row-->
         </div><!--/.container-->

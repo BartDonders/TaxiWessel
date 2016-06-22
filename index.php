@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Home | Taxi Wessel</title>
-	
+	<?php $current = 'index'; ?>
 	
     <?php include 'includes/styles.php'; ?>
     
@@ -117,7 +117,7 @@
                     <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="feature-wrap">
                             <i class="fa fa-glass"></i>
-                            <h2>Limousine taxi</h2>
+                            <h2>Limousine</h2>
                             <h3>Speciaal voor een gala of bruiloft.</h3>
                         </div>
                     </div><!--/.col-md-4-->
